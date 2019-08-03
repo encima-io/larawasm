@@ -1,8 +1,7 @@
 # Laravel + WebAssembly
 
-[![License](https://img.shields.io/packagist/l/e2consult/larawasm.svg)](https://packagist.org/packages/e2consult/larawasm)
-[![Total Downloads](https://img.shields.io/packagist/dt/e2consult/larawasm.svg)](https://packagist.org/packages/e2consult/larawasm)
-[![StyleCI](https://styleci.io/repos/181854402/shield)](https://styleci.io/repos/181854402)
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+[![Total Downloads](https://img.shields.io/github/downloads/e2-consult/larawasm/total.svg)](https://github.com/e2-consult/larawasm)
 
 E2Consult is a webdevelopment team based in Oslo, Norway. You'll find more information about us [on our website](https://e2consult.no).
 
@@ -23,12 +22,16 @@ composer install
 php artisan key:generate
 ```
 
-Good, now we need to compile the Rust files to WebAssembly. You already have two projects located in the "wasm" folder in you root directory. Since Composer and Node has their own directories in the root folder, we should create one for WebAssembly as well, we have called it "wasm".
+Good, now we need to compile the Rust files to WebAssembly. You already have two projects located in the "wasm" folder in you root directory. Since Composer has the "vendor" directory and Node has the 'node_modules' directory, we should have a directory for WebAssembly as well, we have named it "wasm".
+
+```bash
+cd wasm
+```
 
 Go to each project in the wasm folder and run "wasm-pack build". This will create a new folder named "pkg" with the WebAssembly binary and JavaScript glue. Read more about it [in the Rust and WebAssembly book](https://rustwasm.github.io/book/game-of-life/hello-world.html). Both the WebAssembly projects in this repository are created from the book.
 
 ```bash
-cd wasm/hello-world
+cd hello-world
 wasm-pack build
 
 cd ../game-of-life
@@ -50,7 +53,7 @@ npm install
 npm run dev
 ```
 
-Go to your project in the browser and enjoy!
+Go to your project in the browser and enjoy! You can now experiment and make changes to your WebAssembly files located in the wasm directory.
 
 ## Heads up!
 
