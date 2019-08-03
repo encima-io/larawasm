@@ -11,6 +11,8 @@ This package is made to demonstrate how to use WebAssembly with PHP and Laravel.
 
 First you need to install the standard Rust toolchain and wasm-pack, [follow the instructions here](https://rustwasm.github.io/book/game-of-life/setup.html).
 
+You'll also need Laravel installed. Check out [this page for more information.](https://laravel.com/docs/5.8/installation)
+
 Okey, now clone this repository and pull in Laravel's dependencies.
 
 ```bash
