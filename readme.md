@@ -53,7 +53,10 @@ npm install
 npm run dev
 ```
 
-Go to your project in the browser and enjoy! You can now experiment and make changes to your WebAssembly files located in the wasm directory.
+Go to your project in the browser and enjoy!
+
+## Whats next
+You can now experiment and make changes to your WebAssembly files located in the wasm directory. The javascript files that interact with the wasm files are located in the "resources/js/" folder.
 
 ## Heads up!
 
