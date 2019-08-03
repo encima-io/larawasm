@@ -86,6 +86,17 @@ Add this line to the within "types"
 application/wasm                   wasm;
 ```
 
+And remember to restart/reload nginx for the changes to take effect.
+**Ubuntu**
+```
+sudo systemctl reload nginx
+```
+
+**MacOS**
+```
+sudo nginx -s reload
+```
+
 ## License
 
 The MIT License (MIT).
